@@ -333,6 +333,47 @@ h1 {
   }
 }
 
+.sub-container{
+	position: relative;
+    display: flex;
+    width: 100%;
+    background: #f0eaea;
+    padding: 2rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-title{
+	flex: 0 0 auto;
+	width: 100%;
+	text-align: center;
+}
+.content-title h2{
+	font-size: 2rem;
+	font-style: italic;
+	color: #7ba800;
+	font-weight: 800;
+}
+.content-source{
+	flex: 0 0 auto;
+	padding: 1rem;
+	width: 45%;
+}
+.content-source img{
+	width: 640px;
+}
+.content-detail{
+	padding: 1.5rem;
+	flex: 0 0 auto;
+	width: 45%;
+	line-height: 2rem;
+	text-align: justify;
+}
+.margin-bottom-2{
+	margin-bottom: 1.5rem;
+}
 footer {
   padding: 40px 0;
   background-color: #353535;
