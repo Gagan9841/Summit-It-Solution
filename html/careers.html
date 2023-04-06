@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font awesome css link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google font link for using required font from fonts.google.com  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .form-container {
+            margin: 0 auto;
+            max-width: 600px;
+            width: 50%;
+            padding: 20px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form span {
+            color: #036307;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .career-detail {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .career-logo {
+            width: 50%;
+            flex: 0 0 auto;
+        }
+
+        .career-logo img {
+            width: 150px;
+        }
+
+        .career-content {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        form {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            font-size: 16px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button[type="submit"] {
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="logo-section">
+                <a href="index.html"><img class="logo" src="../img/Logo.jpg" alt="SIS logo"></a>
+            </div>
+            <nav>
+                <input class="responsive-menu" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-lists">
+                        <li class="nav-list "><a href="./aboutUs.html">About Us</a></li>
+                        <li class="nav-list has-submenu"><a href="services.html">Services</a>
+                            <ul class="submenu">
+                                <li><a href="web.html">Web</a></li>
+                                <li><a href="businessit.html">Business IT</a></li>
+                                <li><a href="cloud.html">Cloud Services</a></li>
+                                <li><a href="app.html">App Dev</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="gallery.html"> Project Gallery </a></li>
+
+                        <li class="nav-list has-submenu">
+                            <a href="">Partner</a>
+                            <ul class="submenu">
+                                <li><a href="testimonial.html">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="contact.html">Contact</a></li>
+                        <li class="nav-list"><a href="careers.html">Careers</a></li>
+                        <li class="nav-list">Reference</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="page-name">
+            <span>Project Gallery</span>
+        </div>
+        <div class="main">
+            <div class="about-us-img">
+                <img src="../img/careers.jpg" alt="">
+            </div>
+        </div>
+        <div class="career-detail">
+            <div class="career-logo">
+                <img src="../img/Logo.jpg" alt="logo">
+            </div>
+            <div class="career-content">
+                <h2>Learn and Earn</h2>
+                <p>Fill the form below and submit your interest and grow your next step towards your future i Summit IT
+                    Solution. Here you can learn and earn at the same time. </p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form>
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload your Resume</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+
+                <h2>Course Information</h2>
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="cyber-security">Cyber Security</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+                <span>Please be noticed that only shortlisted candidate will be informed about the interview
+                    schedule.</span>
+                <button type="submit">Enroll Now</button>
+            </form>
+        </div>
+        <div class="sub-container">
+            <div class="content-title">
+                <h2>"What we do !"</h2>
+            </div>
+            <div class="content-source">
+                <img src="../img/what-we-do.jpg" alt="cloud-service">
+            </div>
+            <div class="content-detail">
+                <p class="margin-bottom-2">Welcome to SIS, where we provide a variety of services to aid companies in
+                    thriving in the digital sphere. Our team of professionals has particular expertise in business
+                    intelligence, cloud services, app development, and search engine optimization (SEO). We have the
+                    knowledge and experience to assist you in realizing your objectives, whether they involve enhancing
+                    your web appearance, streamlining your processes, or gaining insightful information about your
+                    company. Our specialized solutions are created to address your unique requirements and produce
+                    outcomes that beyond your expectations. Get in touch with us right now to find out more about how we
+                    can make your company successful in the digital era.</p>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <hr>
+        <div class="footer-link">
+            <ul>
+                <li><a href="app.html">App Dev</a></li>
+                <li><a href="testimonial">Our Testimonial</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="seo.html">SEO</a></li>
+            </ul>
+        </div>
+        <p class="copyright"> &copy; Summit IT Solution 2023. All right reserved</p>
+    </footer>
+    <!-- <script src="../js/all.js"></script> -->
+    <!-- Font awesome js link for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const btn = document.querySelector('.popup-btn');
+        const popup = document.querySelector('.popup-container');
+        const closeButton = document.querySelector(".close-btn");
+
+        btn.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        closeButton.addEventListener("click", function () {
+            popup.style.display = 'none';
+
+        });
+
+    </script>
+
+</body>
+
+</html>

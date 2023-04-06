@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Galley</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font awesome css link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google font link for using required font from fonts.google.com  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .projects {
+            width: 22%;
+            flex: 0 0 auto;
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        .projects img {
+            width: 100%;
+        }
+
+        .project-title span {
+            font-size: 20px;
+            font-weight: thin;
+            border-radius: 20px;
+            background: #8ab612;
+            color: white;
+            padding: 0.4rem;
+        }
+
+
+        .popup-container {
+            display: none;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        .popup-content {
+            position: absolute;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects img {
+            margin-bottom: 1.5rem;
+        }
+
+        .popup-content img {
+            width: inherit;
+        }
+
+        .popup-content h1,
+        span {
+            margin-bottom: 1rem;
+            font-size: 19px;
+            color: #8ab612;
+        }
+
+        .content {
+            width: 50%;
+            margin-bottom: 2rem;
+            flex: 0 0 auto;
+        }
+
+        .close-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="logo-section">
+                <a href="index.html"><img class="logo" src="../img/Logo.jpg" alt="SIS logo"></a>
+            </div>
+            <nav>
+                <input class="responsive-menu" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-lists">
+                        <li class="nav-list "><a href="./aboutUs.html">About Us</a></li>
+                        <li class="nav-list has-submenu"><a href="services.html">Services</a>
+                            <ul class="submenu">
+                                <li><a href="web.html">Web</a></li>
+                                <li><a href="businessit.html">Business IT</a></li>
+                                <li><a href="cloud.html">Cloud Services</a></li>
+                                <li><a href="app.html">App Dev</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="gallery.html"> Project Gallery </a></li>
+
+                        <li class="nav-list has-submenu">
+                            <a href="">Partner</a>
+                            <ul class="submenu">
+                                <li><a href="testimonial.html">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="contact.html">Contact</a></li>
+                        <li class="nav-list"><a href="careers.html">Careers</a></li>
+                        <li class="nav-list">Reference</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="page-name">
+            <span>Project Gallery</span>
+        </div>
+        <div class="main">
+            <div class="about-us-img">
+                <img src="../img/projec-gallery.jpg" alt="">
+            </div>
+        </div>
+        <div class="popup-container">
+            <div class="popup-content">
+                <div class="close">
+                    <button class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="content">
+                    <img src="../img/app-popup.jpg" alt="app">
+                    <span>Android App of Uber Eats</span>
+                </div>
+                <div class="content">
+
+                    <img src="../img/ios-popup.jpg" alt="ios">
+                    <span>IOS App of Uber</span>
+                </div>
+                <div class="content">
+
+                    <img src="../img/seo-popup.jpg" alt="seo">
+                    <span>SEO for instagram</span>
+                </div>
+                <div class="content">
+
+                    <img src="../img/web-popup.jpg" alt="web">
+                    <span>Website designing for snapchat</span>
+                </div>
+                <div class="content">
+
+                    <img src="../img/business popup.jpg" alt="business">
+                    <span>Business intelligence integrated in Thai Airlines</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-gallery">
+            <div class="projects">
+                <img src="../img/project-for-popup.jpg" alt="">
+                <div class="project-title">
+                    <span>Our Project Gallery</span>
+                </div>
+                <button class="popup-btn learn-more-btn">Show All</button>
+            </div>
+        </div>
+
+        <div class="sub-container">
+            <div class="content-title">
+                <h2>"What we do !"</h2>
+            </div>
+            <div class="content-source">
+                <img src="../img/what-we-do.jpg" alt="cloud-service">
+            </div>
+            <div class="content-detail">
+                <p class="margin-bottom-2">Welcome to SIS, where we provide a variety of services to aid companies in
+                    thriving in the digital sphere. Our team of professionals has particular expertise in business
+                    intelligence, cloud services, app development, and search engine optimization (SEO). We have the
+                    knowledge and experience to assist you in realizing your objectives, whether they involve enhancing
+                    your web appearance, streamlining your processes, or gaining insightful information about your
+                    company. Our specialized solutions are created to address your unique requirements and produce
+                    outcomes that beyond your expectations. Get in touch with us right now to find out more about how we
+                    can make your company successful in the digital era.</p>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <hr>
+        <div class="footer-link">
+            <ul>
+                <li><a href="app.html">App Dev</a></li>
+                <li><a href="testimonial">Our Testimonial</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="seo.html">SEO</a></li>
+            </ul>
+        </div>
+        <p class="copyright"> &copy; Summit IT Solution 2023. All right reserved</p>
+    </footer>
+    <!-- <script src="../js/all.js"></script> -->
+    <!-- Font awesome js link for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const btn = document.querySelector('.popup-btn');
+        const popup = document.querySelector('.popup-container');
+        const closeButton = document.querySelector(".close-btn");
+
+        btn.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        closeButton.addEventListener("click", function () {
+            popup.style.display = 'none';
+
+        });
+
+    </script>
+
+</body>
+
+</html>

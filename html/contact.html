@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font awesome css link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google font link for using required font from fonts.google.com  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        form {
+            max-width: 800px;
+            width: 50%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 28px;
+            color: #353535;
+            margin-bottom: 30px;
+        }
+
+        .form-elements {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            font-size: 16px;
+            color: #353535;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0px 0px 5px #40404051;
+        }
+
+        button[type="submit"] {
+            color: #85b91c;
+            border: 2px solid #4CAF50;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #5e8c00;
+            color: #fff;
+            transition-duration: 0.5s;
+        }
+
+        .popup-container {
+            display: none;
+            position: fixed;
+            flex-wrap: wrap;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-container.show {
+            display: flex;
+        }
+
+        .success-message {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+            margin: 0 auto;
+            justify-content: center;
+            background-color: white;
+            color: #4a6e03;
+            font-size: 25px;
+            text-align: center;
+            padding: 10px;
+            z-index: 9999;
+        }
+
+        .ok-btn {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ok-button {
+            width: 10rem;
+            padding: 0.5rem;
+            font-size: 23px;
+            background: #6b9502;
+            font-weight: bold;
+            color: white;
+        }
+
+        .popup-container .ok-btn:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 480px) {
+            form {
+                padding: 10px;
+            }
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+
+            button[type="submit"] {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        .error {
+            border: 2px solid red;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="logo-section">
+                <a href="index.html"><img class="logo" src="../img/Logo.jpg" alt="SIS logo"></a>
+            </div>
+            <nav>
+                <input class="responsive-menu" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-lists">
+                        <li class="nav-list "><a href="./aboutUs.html">About Us</a></li>
+                        <li class="nav-list has-submenu"><a href="services.html">Services</a>
+                            <ul class="submenu">
+                                <li><a href="web.html">Web</a></li>
+                                <li><a href="businessit.html">Business IT</a></li>
+                                <li><a href="cloud.html">Cloud Services</a></li>
+                                <li><a href="app.html">App Dev</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="gallery.html"> Project Gallery </a></li>
+
+                        <li class="nav-list has-submenu">
+                            <a href="">Partner</a>
+                            <ul class="submenu">
+                                <li><a href="testimonial.html">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="contact.html">Contact</a></li>
+                        <li class="nav-list"><a href="careers.html">Careers</a></li>
+                        <li class="nav-list">Reference</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="popup-container">
+        <div class="success-message">
+            <p>Your Form is submitted successfully</p>
+        </div>
+        <div class="ok-btn">
+            <button class="ok-button">OK</button>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="page-name">
+            <span>Our Services</span>
+        </div>
+        <div class="main">
+            <div class="about-us-img">
+                <img src="../img/contact-us.jpg" alt="">
+            </div>
+        </div>
+        <form action="" method="post">
+            <h3>Contact Form</h3>
+            <div class="form-elements">
+                <input placeholder="Full Name" type="text" tabindex="1" required autofocus>
+            </div>
+            <div class="form-elements">
+                <input placeholder="Email Address" type="email" tabindex="2" required>
+            </div>
+            <div class="form-elements">
+                <input placeholder="Phone Number" type="tel" tabindex="3" required>
+            </div>
+            <div class="form-elements">
+                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </div>
+            <div class="form-elements">
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send now</button>
+            </div>
+        </form>
+
+    </div>
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <hr>
+        <div class="footer-link">
+
+            <ul>
+                <li><a href="app.html">App Dev</a></li>
+                <li><a href="testimonial">Our Testimonial</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="seo.html">SEO</a></li>
+            </ul>
+        </div>
+        <p class="copyright"> &copy; Summit IT Solution 2023. All right reserved</p>
+    </footer>
+    <script src="../js/all.js"></script>
+    <!-- Font awesome js link for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
