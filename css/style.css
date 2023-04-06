@@ -11,6 +11,11 @@ body {
   font-family: "Manrope", sans-serif;
   color: #353535;
 }
+.welcome{
+  font-weight: 25px;
+  color: #353535;
+  margin-bottom: 5rem;
+}
 
 h1 {
   margin: 20px 0;
