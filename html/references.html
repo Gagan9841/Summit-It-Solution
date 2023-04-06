@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font awesome css link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google font link for using required font from fonts.google.com  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        table {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 2rem;
+            width: 90%;
+            table-layout: fixed;
+            overflow: hidden;
+        }
+
+        table caption {
+            font-size: 1.5em;
+            margin: .5em 0 .75em;
+        }
+
+        table tr {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: .35em;
+        }
+
+        table th,
+        table td {
+            padding: .625em;
+            text-align: center;
+        }
+
+        table th {
+            font-size: .85em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+
+            table caption {
+                font-size: 1.3em;
+            }
+
+            table thead {
+                border: none;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+
+            table tr {
+                border-bottom: 3px solid #ddd;
+                display: block;
+                margin-bottom: .625em;
+            }
+
+            table td {
+                border-bottom: 1px solid #ddd;
+                display: block;
+                font-size: .8em;
+                text-align: right;
+            }
+
+            table td::before {
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            table td:last-child {
+                border-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="logo-section">
+                <a href="index.html"><img class="logo" src="../img/Logo.jpg" alt="SIS logo"></a>
+            </div>
+            <nav>
+                <input class="responsive-menu" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                    <span class="menu"></span>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-lists">
+                        <li class="nav-list "><a href="./aboutUs.html">About Us</a></li>
+                        <li class="nav-list has-submenu"><a href="services.html">Services</a>
+                            <ul class="submenu">
+                                <li><a href="web.html">Web</a></li>
+                                <li><a href="businessit.html">Business IT</a></li>
+                                <li><a href="cloud.html">Cloud Services</a></li>
+                                <li><a href="app.html">App Dev</a></li>
+                                <li><a href="seo.html">SEO</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="gallery.html"> Project Gallery </a></li>
+
+                        <li class="nav-list has-submenu">
+                            <a href="partners.html">Partner</a>
+                            <ul class="submenu">
+                                <li><a href="testimonial.html">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-list"><a href="contact.html">Contact</a></li>
+                        <li class="nav-list"><a href="careers.html">Careers</a></li>
+                        <li class="nav-list"><a href="references.html">Reference</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="page-name">
+            <span>References</span>
+        </div>
+        <table>
+            <caption>References and its type</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/tZc3vjPCk-Q</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/v9FQR4tbIq8</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/hpjSkU2UYSU</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/5fNmWej4tAA</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://thumbs.dreamstime.com/b/what-our-clients-say-text-card-hand-210130779.jpg</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td> https://unsplash.com/photos/GW2l7nMWOGI</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://cdn.britannica.com/99/236599-050-1199AD2C/Mark-Zuckerberg-2019.jpg</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/shr_Xn8S8QU</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/WO23uj_8EUU</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/UTk9cXzYWAg</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://unsplash.com/photos/idhx-MOCDSk</td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://as2.ftcdn.net/v2/jpg/05/76/86/07/1000_F_576860768_txA7U1y4EWjaK6IhvmSbQtPtUwTstm69.jpg
+                    </td>
+                </tr>
+                <tr>
+                    <td scope="row">Image</td>
+                    <td>https://st2.depositphotos.com/5312214/9984/i/450/depositphotos_99848094-stock-photo-our-partners-note-pad-with.jpg
+                        career ko link https://unsplash.com/photos/oqStl2L5oxI</td>
+                </tr>
+                <tr>
+                    <td scope="row">Video</td>
+                    <td>https://www.pexels.com/video/digital-calculation-in-geometrical-symmetry-3141210/</td>
+                </tr>
+                <tr>
+                    <td scope="row">Video</td>
+                    <td>https://www.pexels.com/video/smartphone-mobile-phone-mobile-cell-phone-4201543/</td>
+                </tr>
+                <tr>
+                    <td scope="row">Video</td>
+                    <td>https://www.pexels.com/video/the-interior-design-of-a-call-center-office-in-india-5207408/</td>
+                </tr>
+                <tr>
+                    <td scope="row">Video</td>
+                    <td>https://www.pexels.com/photo/blank-close-up-composition-data-372787</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <hr>
+        <div class="footer-link">
+
+            <ul>
+                <li><a href="app.html">App Dev</a></li>
+                <li><a href="testimonial.html">Our Testimonial</a></li>
+
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="seo.html">SEO</a></li>
+            </ul>
+        </div>
+        <p class="copyright"> &copy; Summit IT Solution 2023. All right reserved</p>
+    </footer>
+    <script src="../js/all.js"></script>
+    <!-- Font awesome js link for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
